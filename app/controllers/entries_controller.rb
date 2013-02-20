@@ -1,4 +1,18 @@
 class EntriesController < ApplicationController
+  before_filter :get_entry, :only => [:edit, :update, :destroy]
+  before_filter :check, :only => [:edit, :update, :destroy]
+
+  def get_entry
+    @entry = Entry.find(params[:id])
+  end
+
+  def check
+    if session[:person_id] != @entry.person_id
+      flash[:notice] = "Sorry, you are not the Ijacek who wrote this"
+      redirect_to entries_path
+    end
+  end
+
   def index
     @entry = Entry.new
     @entries = Entry.order("created_at DESC")
@@ -15,11 +29,11 @@ class EntriesController < ApplicationController
   end
 
   def edit
-    @entry = Entry.find(params[:id])
+
   end
 
   def update
-    @entry = Entry.find(params[:id])
+
     @entry.update_attributes(params[:entry])
     redirect_to entries_path
     flash.notice = "Entry changed!"
@@ -30,7 +44,7 @@ class EntriesController < ApplicationController
   end
 
   def destroy
-    @entry = Entry.find(params[:id])
+
     @text = @entry.text
     @entry.destroy
     redirect_to entries_path
