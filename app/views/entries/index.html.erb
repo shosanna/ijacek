@@ -1,0 +1,50 @@
+    <%= image_tag 'balon.png', class: 'header' %>
+
+<div class="left_column">
+<h1 class="dark"> What is the next activity? </h1>
+<p class="left">
+Hello,
+</p>
+
+<p class="left">
+You are looking at beta version of amazing new social site called "Ijacek". If you do not know what does it mean, you are not at the right place here and I reccommend you to close this page.
+</p>
+
+<p class="left"> If you do know, welcome! You can log in into the system with your name and pasword, which is your surname (do not worry, you can change it later). For now, you can only add posts and share your thoughts in the wall on the right side of this page.
+</p>
+
+<p class="left">
+Soon you will find here other very useful features for each and every Ijacek. I promise you interactive list of all our events, planning tool for scheduling ijacek-giving meetings, tool to see who participated where, statistics of attendence or who's turn is now. Keep checking this page so you will not miss anything!
+</p>
+
+</div>
+
+
+<div class="right_column">
+  <h1 class="light">Who said what?</h1>
+  <% if current_user %>
+    <div class="form_table">
+      <%= render "form" %>
+    </div>
+  <% end %>
+
+  <div class="one_entry">
+    <% @entries.each do |entry| %>
+
+      <div class="author"><%= entry.person.username %> said:</div>
+      <div class="edit_menu">
+       <%= link_to edit_entry_path(entry) do %>
+              <i class="icon-edit"></i>
+        <% end %>
+
+        <%= link_to entry_path(entry), :method => :delete do %>
+              <i class="icon-remove"></i>
+        <% end %>
+      </div>
+      <div class="time"><%= distance_of_time_in_words_to_now entry.created_at %> ago</div>
+      <div class="text"><%= entry.text %></div>
+  <% end %>
+  </div>
+</div>
+
+

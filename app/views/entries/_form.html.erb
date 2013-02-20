@@ -1,0 +1,10 @@
+
+<%= form_for @entry do |f| %>
+    <p>
+      <%= f.text_area :text, rows: 3, placeholder: "What's on your mind?" %>
+    </p>
+
+    <p>
+      <button class="btn" type="submit">Submit</button>
+    </p>
+<% end %>

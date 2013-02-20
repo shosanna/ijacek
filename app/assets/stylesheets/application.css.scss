@@ -1,0 +1,176 @@
+@import "bootstrap";
+@import "font-awesome";
+
+// general styles//
+
+body {
+  font-family: Georgia;
+  font-size: 14px;
+  color: dimgrey;
+}
+
+h1 {
+  font-size: 22px;
+  text-align: center;
+  clear: both;
+}
+
+img.header {
+  position: fixed;
+  left: 38.5%;
+  top: 0;
+  display: inline;
+  width: 150px;
+
+}
+
+h1.header {
+  display: inline;
+  font-size: 44px;
+  text-align: left;
+  color: #EDD9E3;
+  }
+
+.bar {
+background-color: #5C401F;
+height: 50px;
+}
+
+
+.flash {
+  margin: 10px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.login_notice {
+  text-align: right;
+  margin: 20px;
+  font-size: 18px;
+  color: #EDD9E3;
+  background-color: #A1949A;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+
+ // menu style//
+
+ul {
+  float: right;
+  margin-right: 40px;
+
+  li {
+    list-style: none;
+    float: left;
+    margin: 10px;
+  }
+}
+
+i {
+  color: #5C401F;
+
+  &.big {
+    font-size: 28px;
+    color: #EDD9E3;
+  }
+}
+
+// page specific styles //
+
+// Index //
+
+.left_column {
+  float: left;
+  width: 40%;
+  color: #26150D;
+  margin: 20px;
+}
+
+.right_column {
+  float: right;
+  width: 50%;
+  margin: 20px;
+}
+
+.one_entry {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin: 10px 5px 5px 10px;
+  padding: 5px;
+  display: block;
+  width: 150px;
+}
+
+.edit_menu {
+  display: inline;
+}
+
+.time {
+  font-style: italic;
+  font-size: 14px;
+  margin: 0px 0px px 10px;
+  padding: 5px;
+  display: inline;
+}
+
+.text {
+  background-color: #EDD9E3;
+  border-radius: 20px;
+  display: block;
+  width: 400px;
+  margin: 10px 0px 10px 40px;
+  padding: 10px;
+
+}
+
+.form_table {
+  margin: auto;
+}
+
+h1.light {
+  color: #5C401F;
+}
+
+.new_entry textarea {
+  width: 500px;
+  margin: auto;
+}
+
+.new_entry input {
+  width: 150px;
+  margin: auto;
+}
+
+h1.dark {
+  background-color: #A1949A;
+  border-radius: 10px;
+}
+
+p.left {
+  padding: 10px;
+  text-align: justify;
+}
+
+// Edit //
+
+.edit_entry {
+  margin: 30px 30px 30px 200px;
+  float: left;
+}
+
+img.right_img {
+  width: 300px;
+}
+
+// Log in //
+
+.login_page {
+  width: 200px;
+  margin: auto;
+}
+
