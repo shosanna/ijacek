@@ -1,9 +1,10 @@
 <div class="show_page">
   <h1 class="username_title"><%= @person.username %> </h1>
 
-  <p class="person_info">
-    <%= @person.info %>
+   <i class="icon-quote-left quotes"></i> <p class="person_info">
+  <%= @person.info %>
   </p>
+  <i class="icon-quote-right quotes right_quote"></i>
 
   <p>
     <%= link_to "Edit profile", edit_person_path(@person) %>

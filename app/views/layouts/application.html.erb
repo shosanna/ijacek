@@ -10,7 +10,7 @@
 
 <div class="bar">
     <div class="menu">
-      <ul>
+      <ul class="menu">
         <% if current_user %>
           <li>
             <%= link_to current_user do %>
@@ -18,6 +18,10 @@
             <% end %>
           </li>
         <% end %>
+
+        <li><%= link_to people_path do %>
+          <i class="icon-group big"></i>
+        <% end %></li>
 
         <li><%= link_to entries_path do %>
           <i class="icon-home big"></i>

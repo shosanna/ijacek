@@ -1,6 +1,11 @@
 <h1> All of the Ijacek's members </h1>
- <div class="all_people">
-    <% @people.each do |person| %>
-    <%= link_to person.username, person %>
-  <% end %>
-  </div>
+
+    <ul class="people_list">
+      <% @people.each do |person| %>
+      <div class="all_people">
+        <li><%= link_to person.username, person %> </li>
+        </div>
+      <% end %>
+    </ul>
+
+  <%= image_tag 'pooh.jpg', class: "people_img" %>

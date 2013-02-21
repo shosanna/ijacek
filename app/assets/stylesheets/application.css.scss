@@ -15,6 +15,16 @@ h1 {
   clear: both;
 }
 
+a {
+  text-decoration: none;
+  color: #5C401F;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #A1949A;
+}
+
 img.header {
   position: fixed;
   left: 38.5%;
@@ -57,7 +67,7 @@ height: 50px;
 
  // menu style//
 
-ul {
+ul.menu {
   float: right;
   margin-right: 40px;
 
@@ -189,13 +199,22 @@ img.right_img {
 }
 
 .person_info {
-  font-size: 22px;
-  font-style: italic;
+  font-size: 18px;
   background-color: #5C401F;
   color: #EDD9E3;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+}
+
+.quotes {
+  color: #A1949A;
+  font-size: 20px;
+}
+
+.right_quote {
+  position: relative;
+  left: 500px;
 }
 
 // Edit profile //
@@ -207,5 +226,32 @@ img.right_img {
 
 .edit_page textarea {
   width: 300px;
+}
+
+// Index all of people //
+
+.all_people {
+  width: 100px;
+  margin: 10px 10px 10px 200px;
+  padding: 5px;
+  background-color: #EDD9E3;
+  border-radius: 10px;
+}
+
+ul.people_list {
+  margin: 5px;
+  padding: 5px;
+
+  li {
+    list-style: none;
+    float: none;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+img.people_img {
+  width: 300px;
+  float: right;
+  margin: 0 150px 0 0;
 }
 
