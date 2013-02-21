@@ -2,6 +2,7 @@ class EntriesController < ApplicationController
   before_filter :get_entry, :only => [:edit, :update, :destroy]
   before_filter :check, :only => [:edit, :update, :destroy]
 
+
   def get_entry
     @entry = Entry.find(params[:id])
   end

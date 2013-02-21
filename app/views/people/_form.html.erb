@@ -1,0 +1,11 @@
+<%= form_for @person do |f| %>
+    <p>
+      <%= f.text_field :username, placeholder: "Change your username" %>
+    </p>
+     <p>
+      <%= f.text_area :info, rows: 8, placeholder: "Write something about yourself" %>
+    </p>
+    <p>
+      <button class="btn" type="submit">Submit</button>
+    </p>
+<% end %>

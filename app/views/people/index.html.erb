@@ -1,0 +1,6 @@
+<h1> All of the Ijacek's members </h1>
+ <div class="all_people">
+    <% @people.each do |person| %>
+    <%= link_to person.username, person %>
+  <% end %>
+  </div>

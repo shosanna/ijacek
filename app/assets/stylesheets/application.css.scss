@@ -156,7 +156,7 @@ p.left {
   text-align: justify;
 }
 
-// Edit //
+// Edit entry //
 
 .edit_entry {
   margin: 30px 30px 30px 200px;
@@ -172,5 +172,40 @@ img.right_img {
 .login_page {
   width: 200px;
   margin: auto;
+}
+
+// Show profile page //
+
+.show_page {
+  margin: auto;
+  width: 500px;
+}
+
+.username_title {
+  font-size: 48px;
+  color: #5C401F;
+  margin: 10px;
+  padding: 5px;
+}
+
+.person_info {
+  font-size: 22px;
+  font-style: italic;
+  background-color: #5C401F;
+  color: #EDD9E3;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+// Edit profile //
+
+.edit_page {
+  width: 500px;
+  margin: auto;
+}
+
+.edit_page textarea {
+  width: 300px;
 }
 
