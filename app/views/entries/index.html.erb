@@ -31,8 +31,8 @@ Soon you will find here other very useful features for each and every Ijacek. I 
   <div class="one_entry">
     <% @entries.each do |entry| %>
 
-      <div class="author"><%= entry.person.username %> said:</div>
-      <div class="edit_menu">
+      <div class="author">
+        <%= image_tag entry.person.image, class: 'thumb' %>
        <%= link_to edit_entry_path(entry) do %>
               <i class="icon-edit"></i>
         <% end %>
@@ -40,8 +40,11 @@ Soon you will find here other very useful features for each and every Ijacek. I 
         <%= link_to entry_path(entry), :method => :delete do %>
               <i class="icon-remove"></i>
         <% end %>
-      </div>
       <div class="time"><%= distance_of_time_in_words_to_now entry.created_at %> ago</div>
+        <%= link_to entry.person do %>
+            <%= entry.person.username %>
+            <% end %> said:
+      </div>
       <div class="text"><%= entry.text %></div>
   <% end %>
   </div>

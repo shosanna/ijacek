@@ -113,11 +113,12 @@ i {
   margin: 10px 5px 5px 10px;
   padding: 5px;
   display: block;
-  width: 150px;
+
+  font-size: 18px;
 }
 
 .edit_menu {
-  display: inline;
+
 }
 
 .time {
@@ -166,6 +167,10 @@ p.left {
   text-align: justify;
 }
 
+img.thumb {
+  width: 80px;
+  height: 60px;
+}
 // Edit entry //
 
 .edit_entry {
@@ -217,6 +222,17 @@ img.right_img {
   left: 500px;
 }
 
+.show_image {
+  width: 300px;
+}
+
+.image_div {
+  margin: 50px;
+  display: block;
+  margin: auto;
+  width: 310px;
+}
+
 // Edit profile //
 
 .edit_page {
@@ -228,6 +244,16 @@ img.right_img {
   width: 300px;
 }
 
+.image_table {
+  width: 650px;
+  margin: auto;
+}
+
+img.profile_img {
+  width: 200px;
+  height: 150px;
+  float: left;
+}
 // Index all of people //
 
 .all_people {

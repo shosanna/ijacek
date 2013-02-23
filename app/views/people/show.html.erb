@@ -1,14 +1,18 @@
 <div class="show_page">
   <h1 class="username_title"><%= @person.username %> </h1>
 
+  <div class="image_div">
+    <%= image_tag @person.image, class: 'show_image' %>
+  </div>
+
    <i class="icon-quote-left quotes"></i> <p class="person_info">
   <%= @person.info %>
   </p>
   <i class="icon-quote-right quotes right_quote"></i>
-
   <p>
     <%= link_to "Edit profile", edit_person_path(@person) %>
   </p>
+
 </div>
 
 
