@@ -6,7 +6,8 @@
 <div class="choose_img">
 <h1> Choose your image: </h1>
   <div class="image_table">
-    <% ["4.png", "5.jpg", "6.jpeg", "7.gif", "8.gif", "9.jpeg", "10.jpg", "11.gif", "12.gif", "13.gif", "14.jpg", "15.gif", "1.jpg", "2.jpg", "3.png"].each do |image| %>
+    <% ["4.png", "5.jpg", "6.jpeg", "7.gif", "8.gif", "9.jpeg", "10.jpg", "11.gif", "12.gif", "13.gif",
+      "problem.jpg", "15.gif", "1.jpg", "2.jpg", "3.png"].each do |image| %>
         <%= link_to image_path(image: image), :method => :put do %>
           <%= image_tag image, class: 'profile_img' %>
           <% end %>
