@@ -1,0 +1,18 @@
+
+.show_page
+  h1 = @person.username
+  .image_div
+    = image_tag @person.image_or_default, class: 'show_image'
+
+  .center
+    i.icon-quote-left.quotes
+    p.person_info
+      = @person.info
+    i.icon-quote-right.quotes.right_quote
+    p
+      = link_to "Edit profile", edit_person_path(@person)
+
+
+
+
+

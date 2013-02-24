@@ -35,7 +35,7 @@ a:hover {
 
 img.header {
   position: fixed;
-  left: 38.5%;
+  left: 46.5%;
   top: 0;
   display: inline;
   width: 150px;
@@ -51,6 +51,10 @@ img.header {
   margin-top: 4px;
 }
 
+.center {
+  width: 500px;
+  margin: auto;
+}
 
 
  // menu style//
@@ -79,101 +83,17 @@ i {
 
 // Index //
 
-.left_column {
-  float: left;
-  width: 40%;
-  color: #26150D;
-  margin: 20px;
-}
-
-.right_column {
-  float: right;
-  width: 50%;
-  margin: 20px;
-}
-
-.one_entry {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.author {
-  margin: 10px 5px 5px 10px;
-  padding: 5px;
-  display: block;
-
-  font-size: 18px;
-}
-
-.edit_menu {
-
-}
-
-.time {
-  font-style: italic;
-  font-size: 14px;
-  margin: 0px 0px px 10px;
-  padding: 5px;
-  display: inline;
-}
-
-
-.form_table {
-  margin: auto;
-}
-
-h1.light {
-  color: #5C401F;
-}
-
-.new_entry textarea {
-  width: 500px;
-  margin: auto;
-}
-
 .new_entry input {
   width: 150px;
   margin: auto;
-}
-
-h1.dark {
-  background-color: #A1949A;
-  border-radius: 10px;
-}
-
-p.left {
-  padding: 10px;
-  text-align: justify;
 }
 
 img.thumb {
   width: 80px;
   height: 60px;
 }
-// Edit entry //
-
-.edit_entry {
-  margin: 30px 30px 30px 200px;
-  float: left;
-}
-
-img.right_img {
-  width: 300px;
-}
 
 // Log in //
-
-.login_page {
-  width: 200px;
-  margin: auto;
-}
-
-// Show profile page //
-
-.show_page {
-  margin: auto;
-  width: 500px;
-}
 
 .username_title {
   font-size: 48px;
@@ -188,6 +108,7 @@ img.right_img {
   color: #EDD9E3;
   border-radius: 10px;
   padding: 10px;
+  width: 480px;
   margin: 10px;
 }
 
