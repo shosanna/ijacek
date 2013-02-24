@@ -32,8 +32,11 @@ Soon you will find here other very useful features for each and every Ijacek. I 
     <% @entries.each do |entry| %>
 
       <div class="author">
-        <%= image_tag entry.person.image, class: 'thumb' %>
-       <%= link_to edit_entry_path(entry) do %>
+        <% if entry.person.image %>
+          <%= image_tag entry.person.image, class: 'thumb' %>
+        <% end %>
+
+        <%= link_to edit_entry_path(entry) do %>
               <i class="icon-edit"></i>
         <% end %>
 
