@@ -4,7 +4,7 @@ class Person < ActiveRecord::Base
   has_many :entries
 
   def shedule
-    ["Tom", "Joc", "Arnie"]
+    ["Tyna", "Tomas", "Simona", "Kuba", "Pavel"]
   end
 
   def current
