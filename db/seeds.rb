@@ -5,3 +5,20 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Person.destroy_all
+Entry.destroy_all
+
+%w(Tyna Jakub Simonka Pavel Martina Arnie Joc Tomas).each do |user|
+  a = Person.new(:username => user)
+  a.password = "heslo"
+  a.save
+end
+
+v = Person.first
+v.ijacek = true
+v.save
+
+
+
+

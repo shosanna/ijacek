@@ -8,14 +8,16 @@
       tr
         td Ijacek is now with
         td
-           current
+           = Person.find_current.username
       tr
         td Next one will be
         td
-           next_person
+           = Person.next.username
       tr
         td Next exchange should be in
         td 10 days (example)
+
+    button.btn.btn-warning Confirm Ijacek exchange
 
   .offset1.span5
     h1 Who said what?

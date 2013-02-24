@@ -1,30 +1,38 @@
 class Person < ActiveRecord::Base
   has_secure_password
   attr_accessible :gender, :info, :password_hash, :password_salt, :username
-  has_many :entries
+  has_many :entries, :dependent => :destroy
 
-  def shedule
+  def self.schedule
     ["Tyna", "Tomas", "Simona", "Kuba", "Pavel"]
   end
 
-  def current
+  def self.find_current
     Person.where(:ijacek => true).first
   end
 
-  def next
+  def self.next
     # zjistim na jake pozici v poli je current
-    position = schedule.index(current)
-    # current nastavim na false
-    current.ijacek = false
-    current.save
-    # ten dalsi po current se nastavi na true
-    new_position = position + 1
-    name = schedule[new_position]
-    next_person = Person.find_by_username("name")
-    next_person.ijacek = true
-    next_person.save
-    # vratim toho dalsiho
-    return next_person
+      current = find_current
+    if current
+      position = schedule.index(current.username)
+      # current nastavim na false
+      current.ijacek = false
+      current.save
+      # ten dalsi po current se nastavi na true
+      new_position = (position + 1) % schedule.length
+      name = schedule[new_position]
+      next_person = Person.find_by_username(name)
+      next_person.ijacek = true
+      next_person.save
+      # vratim toho dalsiho
+      return next_person
+    else
+      first = schedule[0]
+      first_person = Person.find_by_username(first)
+      first_person.ijacek = true
+      first_person.save
+    end
   end
 
   def image_or_default
