@@ -1,12 +1,20 @@
-@import "bootstrap";
+$navbarLinkColor: #fff;
+$navbarBackground: #5C401F;
+$navbarBackgroundHighlight: #7A6042;
+
 @import "font-awesome";
+@import "bootstrap";
+@import "entries";
 
 // general styles//
-
 body {
   font-family: Georgia;
   font-size: 14px;
   color: dimgrey;
+}
+
+.container {
+  width: 1140px;
 }
 
 h1 {
@@ -34,33 +42,13 @@ img.header {
 
 }
 
-h1.header {
-  display: inline;
-  font-size: 44px;
-  text-align: left;
-  color: #EDD9E3;
-  }
-
-.bar {
-background-color: #5C401F;
-height: 50px;
-}
-
-
-.flash {
-  margin: 10px;
-  font-size: 14px;
-  font-style: italic;
-}
-
 .login_notice {
-  text-align: right;
-  margin: 20px;
-  font-size: 18px;
+  font-size: 14px;
   color: #EDD9E3;
   background-color: #A1949A;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 4px;
+  margin-top: 4px;
 }
 
 
@@ -129,15 +117,6 @@ i {
   display: inline;
 }
 
-.text {
-  background-color: #EDD9E3;
-  border-radius: 20px;
-  display: block;
-  width: 400px;
-  margin: 10px 0px 10px 40px;
-  padding: 10px;
-
-}
 
 .form_table {
   margin: auto;
@@ -275,9 +254,9 @@ ul.people_list {
     font-size: 18px;
   }
 }
+
 img.people_img {
   width: 300px;
   float: right;
   margin: 0 150px 0 0;
 }
-

@@ -29,6 +29,7 @@ group :production do
   gem 'unicorn'
 end
 
+gem 'slim-rails'
 gem 'jquery-rails'
 
 gem 'bootstrap-sass'

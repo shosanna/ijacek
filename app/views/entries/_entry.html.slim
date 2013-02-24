@@ -1,0 +1,12 @@
+.entry
+  .meta
+    .pull-left
+      = image_tag entry.person.image_or_default, class: 'thumb'
+      = link_to entry.person.username, entry.person
+
+    .pull-right
+      = link_to_icon "icon-edit", edit_entry_path(entry)
+      = link_to_icon "icon-remove", entry_path(entry), method: :delete
+      .time #{distance_of_time_in_words_to_now entry.created_at} ago
+
+  .text = entry.text

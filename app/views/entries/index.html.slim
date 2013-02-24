@@ -1,0 +1,12 @@
+= image_tag 'balon.png', class: 'header'
+
+.row
+  .span7
+    h1 nuf
+
+  .offset1.span5
+    h1 Who said what?
+    - if current_user
+      = render "form"
+
+    = render @entries
