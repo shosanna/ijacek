@@ -30,7 +30,8 @@ class Person < ActiveRecord::Base
   def self.change_next
     current = self.current
     if current
-      position = schedule.index(current.username)
+      position = schedule.index(current.username) || 0
+
       # current nastavim na false
       current.ijacek = false
       current.save
