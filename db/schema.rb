@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130224195354) do
+ActiveRecord::Schema.define(:version => 20130227151442) do
 
   create_table "entries", :force => true do |t|
     t.text     "text"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20130224195354) do
     t.string   "password_digest"
     t.string   "image"
     t.boolean  "ijacek"
+    t.string   "time"
+    t.string   "time_exchange"
   end
 
 end

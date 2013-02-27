@@ -1,0 +1,5 @@
+= form_for @entry do |f|
+  p
+    = f.text_area :text, rows: 3, placeholder: "What's on your mind?", class: "span5"
+  p
+    button.btn type="submit" Submit

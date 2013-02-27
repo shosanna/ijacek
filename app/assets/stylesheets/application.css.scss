@@ -178,6 +178,7 @@ ul.people_list {
 
 img.people_img {
   width: 300px;
-  float: right;
-  margin: 0 150px 0 0;
+  position: absolute;
+  top: 200px;
+  left: 450px;
 }

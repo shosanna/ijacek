@@ -8,16 +8,20 @@
       tr
         td Ijacek is now with
         td
-           = Person.find_current.username
+          = Person.current.username
       tr
-        td Next one will be
+        td He or she has it since :
+        td = Person.current.time
+      tr
+        td Next person will be
         td
            = Person.next.username
       tr
-        td Next exchange should be in
-        td 10 days (example)
+        td Next exchange should be
+        td
+           = Person.current.time_exchange
 
-    button.btn.btn-warning Confirm Ijacek exchange
+    = link_to "Confirm Ijacek Exchange", ijacek_index_path, class: "btn btn-warning", method: "post", confirm: "Are you sure? That can not be undone!!"
 
   .offset1.span5
     h1 Who said what?

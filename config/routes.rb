@@ -7,6 +7,8 @@ Ijacek::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
 
   resources :people
+  resources :ijacek
+
   resources :images
 
   # The priority is based upon order of creation:
