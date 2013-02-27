@@ -28,6 +28,7 @@ class Person < ActiveRecord::Base
   end
 
   def self.change_next
+    current = self.current
     if current
       position = schedule.index(current.username)
       # current nastavim na false
@@ -46,8 +47,6 @@ class Person < ActiveRecord::Base
       first_person.save
     end
 
-    # zjistim na jake pozici v poli je current
-    current = self.current
     # Nastavim datum kdy se zavolala tahle funkce = odky je ijacek u cloveka, plus 14 dni je datum kdy je dalsi vymena
     i = Time.now.strftime("%m/%d/%Y")
     current.time = i.to_s

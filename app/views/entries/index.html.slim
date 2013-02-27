@@ -10,7 +10,12 @@
         td
           = Person.current.username
       tr
-        td He or she has it since :
+        td
+          - if Person.current.gender == 1
+              puts He has it since
+          - else
+              puts She has it since
+
         td = Person.current.time
       tr
         td Next person will be
