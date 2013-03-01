@@ -1,0 +1,13 @@
+h1
+  = @activity.name
+table.table.table-striped
+  tr
+    td Description of the activity
+    td = @activity.description
+  tr
+    td Location
+    td = @activity.location
+  tr
+    td Who were there?
+    td = @activity.activity_person_id.map { |id| Person.find(id).username }.join(", ")
+

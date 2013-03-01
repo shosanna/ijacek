@@ -22,4 +22,12 @@ class ActivitiesController < ApplicationController
     flash.notice = "Activity created, hope it was fun!"
   end
 
+  def show
+    @activity = Activity.find(params[:id])
+  end
+
+  def index
+
+  end
+
  end

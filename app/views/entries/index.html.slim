@@ -1,7 +1,7 @@
 = image_tag 'balon.png', class: 'header'
 
 .row
-  .span7
+  .span6
     h1 Ijacek exchanges
 
     table.table
@@ -28,18 +28,17 @@
 
     = link_to "Confirm Ijacek Exchange", ijacek_index_path, class: "btn btn-warning", method: "post", confirm: "Are you sure? That can not be undone!!"
 
-  h1 List of all Ijacek crazy events
-  - @activities.each do |activity|
-    p = activity.name
-    p = activity.description
-    p = activity.location
-    p = activity.activity_person_id.map { |id| Person.find(id).username }.join(", ")
+    h2 List of all Ijacek crazy events
+    ol
+      - @activities.each do |activity|
+        li
+          = link_to activity.name, activity
 
-  = render "activities/form"
+    = render "activities/form"
 
-  .offset1.span5
+  .offset1.span3
     h1 Who said what?
     - if current_user
       = render "form"
 
-    = render @entries
+      = render @entries
