@@ -10,6 +10,7 @@ Ijacek::Application.routes.draw do
   resources :ijacek
 
   resources :images
+  resources :activities
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

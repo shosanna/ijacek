@@ -1,0 +1,12 @@
+= form_for @activity do |f|
+  p
+    = f.text_field :name, placeholder: "Name of the event", class: "span5"
+  p
+    = f.text_area :description, rows: 3, placeholder: "Describe the activity", class: "span5"
+  p
+    = f.text_field :location, placeholder: "Where was it?", class: "span5"
+
+  = f.label "Who were there?"
+  = f.select "person_id", Person.all.collect {|p| [ p.username, p.id ] }, { :include_blank => true }, {:multiple => true}
+  p
+    button.btn type="submit" Submit

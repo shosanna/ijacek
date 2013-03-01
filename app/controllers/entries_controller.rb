@@ -17,13 +17,14 @@ class EntriesController < ApplicationController
   def index
     @entry = Entry.new
     @entries = Entry.order("created_at DESC")
+    @activities = Activity.all
+    @activity = Activity.new
   end
 
   def create
     @entry = Entry.new(params[:entry])
     @entry.person = current_user
     @entry.save
-
     redirect_to entries_path
     flash.notice = "Entry created!"
 
