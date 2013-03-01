@@ -30,13 +30,14 @@
 
     h2 List of all Ijacek crazy events
     ol
-      - @activities.each do |activity|
+      - @activities.first(10).each do |activity|
         li
           = link_to activity.name, activity
+    = link_to "All events", activities_path
 
     = render "activities/form"
 
-  .offset1.span3
+  .offset1.span5
     h1 Who said what?
     - if current_user
       = render "form"
