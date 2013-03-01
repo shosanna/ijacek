@@ -17,6 +17,7 @@ class EntriesController < ApplicationController
   def index
     @entry = Entry.new
     @entries = Entry.order("created_at DESC")
+
     @activities = Activity.all
     @activity = Activity.new
   end

@@ -7,6 +7,6 @@
     = f.text_field :location, placeholder: "Where was it?", class: "span5"
 
   = f.label "Who were there?"
-  = f.select "person_id", Person.all.collect {|p| [ p.username, p.id ] }, { :include_blank => true }, {:multiple => true}
+  = f.select "activity_person_id", Person.all.collect {|p| [ p.username, p.id ] }, {}, {:multiple => true}
   p
     button.btn type="submit" Submit

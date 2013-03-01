@@ -33,7 +33,7 @@
     p = activity.name
     p = activity.description
     p = activity.location
-    p = activity.person_id
+    p = activity.activity_person_id.map { |id| Person.find(id).username }.join(", ")
 
   = render "activities/form"
 

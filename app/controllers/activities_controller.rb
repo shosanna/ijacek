@@ -1,4 +1,4 @@
-class ActivitiesController < ActionController::Base
+class ActivitiesController < ApplicationController
   before_filter :get_entry, :only => [:edit, :update, :destroy]
   before_filter :check, :only => [:edit, :update, :destroy]
 
@@ -15,12 +15,11 @@ class ActivitiesController < ActionController::Base
   end
 
    def create
-      @activity = Activity.new(params[:activity])
-      @activity.person_id = current_user
-      @activity.save
-      redirect_to activites_path
-      flash.notice = "Activity created, hope it was fun!"
-
+    @activity = Activity.new(params[:activity])
+    @activity.activity_person_id.select! { |id| id.present? }
+    @activity.save
+    redirect_to entries_path
+    flash.notice = "Activity created, hope it was fun!"
   end
 
  end
