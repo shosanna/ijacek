@@ -14,13 +14,17 @@ class ActivitiesController < ApplicationController
     end
   end
 
-   def create
-    @activity = Activity.new(params[:activity])
-    @activity.activity_person_id.select! { |id| id.present? }
-    @activity.save
-    redirect_to entries_path
-    flash.notice = "Activity created, hope it was fun!"
+  def new
+  @activity = Activity.new(params[:id])
+  # Doprdele jak to ze to funguje ? Nechapu proc mam taddy v zavorce id a dole activity
   end
+
+  def create
+  @activity = Activity.new(params[:activity])
+  @activity.save
+  flash.notice = "Activity created, hope it was fun!"
+  redirect_to entries_path
+   end
 
   def show
     @activity = Activity.find(params[:id])
@@ -30,5 +34,9 @@ class ActivitiesController < ApplicationController
     @activities = Activity.all
 
   end
+
+  # def update
+  #   @activity.update_attributes(params[:activity_person_id])
+  # end
 
  end

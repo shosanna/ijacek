@@ -1,7 +1,7 @@
 = image_tag 'balon.png', class: 'header'
 
 .row
-  .span6
+  .span7
     h1 Ijacek exchanges
 
     table.table
@@ -28,14 +28,15 @@
 
     = link_to "Confirm Ijacek Exchange", ijacek_index_path, class: "btn btn-warning", method: "post", confirm: "Are you sure? That can not be undone!!"
 
-    h2 List of all Ijacek crazy events
+    h1 Ijacek crazy events
     ol
       - @activities.first(10).each do |activity|
         li
           = link_to activity.name, activity
-    = link_to "All events", activities_path
-
-    = render "activities/form"
+    .pull-left
+      = link_to "All events", activities_path
+    .pull-right
+      = link_to "Create a new activity", new_activity_path, class: "btn"
 
   .offset1.span5
     h1 Who said what?

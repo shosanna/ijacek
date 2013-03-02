@@ -26,7 +26,6 @@ class EntriesController < ApplicationController
     @entry = Entry.new(params[:entry])
     @entry.person = current_user
     @entry.save
-    redirect_to entries_path
     flash.notice = "Entry created!"
 
   end
