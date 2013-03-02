@@ -4,7 +4,7 @@
   .span7
     h1 Ijacek exchanges
 
-    table.table
+    table.table.table-striped
       tr
         td Ijacek is now with
         td
@@ -28,16 +28,17 @@
 
     = link_to "Confirm Ijacek Exchange", ijacek_index_path, class: "btn btn-warning", method: "post", confirm: "Are you sure? That can not be undone!!"
 
-    h1 Ijacek crazy events
+    h1.margin-top Ijacek crazy events
     ol
       - @activities.first(10).each do |activity|
         li
           = link_to activity.name, activity
-    .pull-left
-      = link_to "See all events", activities_path, class: "btn btn-info"
-
-    .pull-left
-      = link_to "Create a new activity", new_activity_path, class: "btn btn-warning"
+    .btn-group
+      .pull-left
+          = link_to "See all events", activities_path, class: "btn btn-info"
+    .btn-group
+      .pull-left
+          = link_to "Create a new activity", new_activity_path, class: "btn btn-warning"
 
   .offset1.span5
     h1 Who said what?
