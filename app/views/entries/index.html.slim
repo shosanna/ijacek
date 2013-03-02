@@ -34,9 +34,10 @@
         li
           = link_to activity.name, activity
     .pull-left
-      = link_to "All events", activities_path
-    .pull-right
-      = link_to "Create a new activity", new_activity_path, class: "btn"
+      = link_to "See all events", activities_path, class: "btn btn-info"
+
+    .pull-left
+      = link_to "Create a new activity", new_activity_path, class: "btn btn-warning"
 
   .offset1.span5
     h1 Who said what?

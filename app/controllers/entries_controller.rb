@@ -18,7 +18,7 @@ class EntriesController < ApplicationController
     @entry = Entry.new
     @entries = Entry.order("created_at DESC")
 
-    @activities = Activity.all
+    @activities = Activity.all(:order => 'created_at DESC')
     @activity = Activity.new
   end
 
