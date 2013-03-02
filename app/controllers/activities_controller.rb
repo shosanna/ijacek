@@ -21,7 +21,7 @@ class ActivitiesController < ApplicationController
   def create
   @activity = Activity.new(params[:activity])
   if @activity.activity_person_id
-    @activitiy.activity_person_id.select! { |person_id| person_id != ""}
+     @activity.activity_person_id.select! { |person_id| person_id != ""}
   end
   @activity.save
   flash.notice = "Activity created, hope it was fun!"
