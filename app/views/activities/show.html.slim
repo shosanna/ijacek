@@ -8,7 +8,7 @@ table.table.table-striped
     td Location
     td = @activity.location
   tr
-    td Who were there?
+    td Who was there?
     td = @activity.activity_person_id.map { |id| Person.find(id).username }.join(", ")
 
 = link_to "I was there!", @activity, :method => :put , class: "btn btn-warning"
