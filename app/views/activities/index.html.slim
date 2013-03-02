@@ -1,5 +1,9 @@
 h1 List of all Ijacek crazy events
-ol
-  - @activities.each do |activity|
-    li
-      = link_to activity.name, activity
+.center
+  ol
+    - @activities.each do |activity|
+      li
+        = link_to activity.name, activity
+
+  .pull-left
+    = link_to "Create a new activity", new_activity_path, class: "btn btn-danger"

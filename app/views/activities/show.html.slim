@@ -11,4 +11,4 @@ table.table.table-striped
     td Who were there?
     td = @activity.activity_person_id.map { |id| Person.find(id).username }.join(", ")
 
-/ = link_to "I was there!", activity_edit_path(:activity_person_id), :method => :put , class: "btn btn-warning"
+= link_to "I was there!", @activity, :method => :put , class: "btn btn-warning"
