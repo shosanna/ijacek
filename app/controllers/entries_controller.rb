@@ -27,11 +27,9 @@ class EntriesController < ApplicationController
     @entry.person = current_user
     @entry.save
     flash.notice = "Entry created!"
-
   end
 
   def edit
-
   end
 
   def update
@@ -39,12 +37,6 @@ class EntriesController < ApplicationController
     @entry.update_attributes(params[:entry])
     redirect_to entries_path
     flash.notice = "Entry changed!"
-  end
-
-  def show
-    @entry = Entry.find(params[:id])
-    @activity = Activity.find(params[:id])
-
   end
 
   def destroy

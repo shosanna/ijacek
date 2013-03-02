@@ -21,6 +21,7 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'pry-rails'
+  gem 'pry-nav'
   gem 'quiet_assets', :group => :development
 end
 

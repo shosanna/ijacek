@@ -19,14 +19,17 @@ class ActivitiesController < ApplicationController
   end
 
   def create
-  @activity = Activity.new(params[:activity])
-  if @activity.activity_person_id
-     @activity.activity_person_id.select! { |person_id| person_id != ""}
+    params[:activity][:activity_person_id].reject!(&:blank?)
+    @activity = Activity.new(params[:activity])
+    @activity.save
+    flash.notice = "Activity created, hope it was fun!"
+    redirect_to activities_path
   end
-  @activity.save
-  flash.notice = "Activity created, hope it was fun!"
-  redirect_to entries_path
-   end
+
+  def edit
+
+
+  end
 
   def show
     @activity = Activity.find(params[:id])
@@ -36,11 +39,20 @@ class ActivitiesController < ApplicationController
   @activities = Activity.all(:order => 'created_at DESC')
   end
 
-  def update
+  def rsvp
+    @activity = Activity.find(params[:id])
     @activity.activity_person_id << current_user.id
     @activity.save
     flash[:notice] = "You just added yourself to the event!"
     redirect_to activity_path
   end
+
+  def update
+    params[:activity][:activity_person_id].reject!(&:blank?)
+    @activity.update_attributes(params[:activity])
+    redirect_to activity_path
+    flash.notice = "Entry changed!"
+  end
+
 
  end

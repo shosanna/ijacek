@@ -10,7 +10,13 @@ Ijacek::Application.routes.draw do
   resources :ijacek
 
   resources :images
-  resources :activities
+  resources :activities do
+    member do
+      # PUT /activities/1/rsvp
+      # rsvp_activity_path(activity), method: :put
+      put :rsvp
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
