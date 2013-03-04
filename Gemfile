@@ -23,6 +23,9 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-nav'
   gem 'quiet_assets', :group => :development
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :production do

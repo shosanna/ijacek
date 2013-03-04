@@ -1,6 +1,6 @@
 class Person < ActiveRecord::Base
   has_secure_password
-  attr_accessible :gender, :info, :password_hash, :password_salt, :username
+  attr_accessible :gender, :info, :password_hash, :password_salt, :username, :ijacek
   has_many :entries, :dependent => :destroy
   has_many :activities
 

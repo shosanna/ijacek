@@ -27,6 +27,7 @@ class EntriesController < ApplicationController
     @entry.person = current_user
     @entry.save
     flash.notice = "Entry created!"
+    redirect_to root_path
   end
 
   def edit

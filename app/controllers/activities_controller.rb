@@ -9,13 +9,13 @@ class ActivitiesController < ApplicationController
 
   def check
     unless current_user
-      flash[:notice] = "Sorry, you are not loged in"
+      flash[:notice] = "Sorry, you are not logged in"
       redirect_to entries_path
     end
   end
 
   def new
-  @activity = Activity.new
+    @activity = Activity.new
   end
 
   def create
@@ -36,7 +36,7 @@ class ActivitiesController < ApplicationController
   end
 
   def index
-  @activities = Activity.all(:order => 'created_at DESC')
+    @activities = Activity.all(:order => 'created_at DESC')
   end
 
   def rsvp
