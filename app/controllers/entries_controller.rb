@@ -45,7 +45,6 @@ class EntriesController < ApplicationController
     @entry.destroy
     redirect_to entries_path
     flash.notice = "<p class='red'> Your entry '<em>#{@text}</em>' has been removed </p>"
-
   end
 
 end

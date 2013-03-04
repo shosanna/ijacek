@@ -3,11 +3,6 @@ class PeopleController < ApplicationController
   before_filter :get_person, :only => [:edit, :update, :destroy, :show]
   before_filter :check, :only => [:edit, :update, :destroy]
 
-
-  def index
-    @people = Person.all
-  end
-
   def show
   end
 

@@ -1,0 +1,7 @@
+= form_for @person do |f|
+  p
+    = f.text_field :username, placeholder: "Change your username"
+  p
+    = f.text_area :info, rows: 8, placeholder: "Write something about yourself"
+  p
+    button.btn type="submit" Submit

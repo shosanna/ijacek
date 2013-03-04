@@ -60,6 +60,10 @@ img.header {
   margin-top: 30px;
 }
 
+img.thumb {
+  width: 80px;
+  height: 60px;
+}
 
  // menu style//
 
@@ -86,16 +90,6 @@ i {
 // page specific styles //
 
 // Index //
-
-.new_entry input {
-  width: 150px;
-  margin: auto;
-}
-
-img.thumb {
-  width: 80px;
-  height: 60px;
-}
 
 // Log in //
 
@@ -160,29 +154,11 @@ img.profile_img {
 }
 // Index all of people //
 
-.all_people {
-  width: 100px;
-  margin: 10px 10px 10px 200px;
-  padding: 5px;
-  background-color: #EDD9E3;
-  border-radius: 10px;
+.navbar .nav > li > .dropdown-menu:before {
+  display: none;
 }
 
-ul.people_list {
-  margin: 5px;
-  padding: 5px;
-
-  li {
-    list-style: none;
-    float: none;
-    text-align: center;
-    font-size: 18px;
-  }
+.navbar .nav > li > .dropdown-menu:after {
+  display: none;
 }
 
-img.people_img {
-  width: 300px;
-  position: absolute;
-  top: 200px;
-  left: 450px;
-}
