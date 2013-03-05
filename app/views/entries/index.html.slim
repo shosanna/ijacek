@@ -1,8 +1,8 @@
 = image_tag 'balon.png', class: 'header'
 
 .row
-  .span7
-    h1 Ijacek exchanges
+  .span6
+    h2 Ijacek exchanges
 
     table.table.table-striped
       tr
@@ -26,9 +26,9 @@
         td
            = Person.current.time_exchange
 
-    = link_to "Confirm Ijacek Exchange", ijacek_index_path, class: "btn btn-warning", method: "post", confirm: "Are you sure? That can not be undone!!"
+    = link_to "Confirm Ijacek Exchange", ijacek_index_path, class: "btn btn-info", method: "post", confirm: "Are you sure? That can not be undone!!"
 
-    h1.margin-top Ijacek crazy events
+    h2.margin-top Ijacek crazy events
     ol
       - @activities.first(10).each do |activity|
         li
@@ -38,10 +38,10 @@
           = link_to "See all events", activities_path, class: "btn btn-info"
     .btn-group
       .pull-left
-          = link_to "Create a new activity", new_activity_path, class: "btn btn-warning"
+          = link_to "Create a new activity", new_activity_path, class: "btn btn-danger"
 
   .offset1.span5
-    h1 Who said what?
+    h1 Messages
     - if current_user
       = render "form"
 

@@ -2,7 +2,7 @@
   .meta
     .pull-left
       = image_tag entry.person.image_or_default, class: 'thumb'
-      = link_to entry.person.username, entry.person
+      = link_to "#{entry.person.username} said:", entry.person, class: "big"
 
     .pull-right
       = link_to_icon "icon-edit", edit_entry_path(entry)

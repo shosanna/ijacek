@@ -1,36 +1,37 @@
 $navbarLinkColor: #fff;
 $navbarBackground: #5C401F;
 $navbarBackgroundHighlight: #7A6042;
+$gridColumnWidth: 65px;
 
 @import "font-awesome";
 @import "bootstrap";
+@import "flat-ui";
 @import "entries";
+@import "flat";
 
 // general styles//
 body {
-  font-family: Georgia;
-  font-size: 14px;
-  color: dimgrey;
+font-family: georgia;
+color: dimgrey;
+font-size: 14px;
 }
 
-.container {
-  width: 1140px;
+.box {
+  margin-left: 15px;
 }
 
-h1 {
-  font-size: 22px;
+h1,h2,h3 {
   text-align: center;
-  clear: both;
 }
 
 a {
   text-decoration: none;
-  color: #5C401F;
+  color: #34495E;
 }
 
 a:hover {
   text-decoration: none;
-  color: #A1949A;
+  color: #3498DB;
 }
 
 img.header {
@@ -42,13 +43,10 @@ img.header {
 
 }
 
-.login_notice {
-  font-size: 14px;
-  color: #EDD9E3;
-  background-color: #A1949A;
-  padding: 5px;
-  border-radius: 4px;
-  margin-top: 4px;
+.flash_mes {
+  color: #E67E22;
+  text-align: right;
+
 }
 
 .center {
@@ -67,25 +65,6 @@ img.thumb {
 
  // menu style//
 
-ul.menu {
-  float: right;
-  margin-right: 40px;
-
-  li {
-    list-style: none;
-    float: left;
-    margin: 10px;
-  }
-}
-
-i {
-  color: #5C401F;
-
-  &.big {
-    font-size: 28px;
-    color: #EDD9E3;
-  }
-}
 
 // page specific styles //
 
@@ -154,11 +133,6 @@ img.profile_img {
 }
 // Index all of people //
 
-.navbar .nav > li > .dropdown-menu:before {
-  display: none;
-}
 
-.navbar .nav > li > .dropdown-menu:after {
-  display: none;
-}
+
 
