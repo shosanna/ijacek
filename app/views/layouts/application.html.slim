@@ -9,12 +9,12 @@ html
 body
   .box
     .row
-      .navbar
+      .navbar.navbar-fixed-top
         .navbar-inner
           .container
             .nav-collapse.collapse
               ul.nav.pull-left
-                li
+                li.title
                   = link_to "Ijáček", root_path
               ul.nav.pull-right
                 - if current_user
