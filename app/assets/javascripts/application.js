@@ -18,4 +18,5 @@
 
 $(function() {
   $("img.header").draggable();
+  $("span.pie").peity("pie")
 })

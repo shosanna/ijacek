@@ -4,6 +4,10 @@ class PeopleController < ApplicationController
   before_filter :check, :only => [:edit, :update, :destroy]
 
   def show
+    @activities = Activity.all
+    @activities.select! do |activity|
+      activity.activity_person_id.include?(@person.id)
+    end
   end
 
   def edit

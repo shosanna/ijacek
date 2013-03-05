@@ -1,16 +1,27 @@
-
-.show_page
-  h1 = @person.username
-  .image_div
-    = image_tag @person.image_or_default, class: 'show_image'
-
-  .center
-    i.icon-quote-left.quotes
-    p.person_info
-      = @person.info
-    i.icon-quote-right.quotes.right_quote
-    p
+h2 = @person.username
+.show_image
+  = image_tag @person.image_or_default
+.divide
+.red.center
+  p
+    = @person.info
+.divide
+p.pull-right
       = link_to "Edit profile", edit_person_path(@person)
+.divide
+.span4
+  h3 I was there!
+  .orange
+    - @activities.each do |activity|
+      li = activity.name
+.span4
+  h3 My statitistics
+  span.pie data-diameter="100" 13, 14, 15, 1
+
+.span3
+  h3 My comments
+
+
 
 
 

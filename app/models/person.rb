@@ -4,6 +4,7 @@ class Person < ActiveRecord::Base
   has_many :entries, :dependent => :destroy
   has_many :activities
 
+
   def self.schedule
     ["Tyna", "Tom", "Simonka", "Kuba", "Pavel"]
   end
@@ -36,6 +37,7 @@ class Person < ActiveRecord::Base
       # current nastavim na false
       current.ijacek = false
       current.save
+
       # ten dalsi po current se nastavi na true
       new_position = (position + 1) % schedule.length
       name = schedule[new_position]
