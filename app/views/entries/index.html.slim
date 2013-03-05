@@ -2,7 +2,7 @@
 
 .row
   .span6
-    h2 Ijacek exchanges
+    h3 Ijacek exchanges
 
     table.table.table-striped
       tr
@@ -26,22 +26,22 @@
         td
            = Person.current.time_exchange
 
-    = link_to "Confirm Ijacek Exchange", ijacek_index_path, class: "btn btn-info", method: "post", confirm: "Are you sure? That can not be undone!!"
+    = link_to "Confirm Ijacek Exchange", ijacek_index_path, class: "btn btn-danger", method: "post", confirm: "Are you sure? That can not be undone!!"
 
-    h2.margin-top Ijacek crazy events
+    h3.margin-top Ijacek crazy events
     ol
       - @activities.first(10).each do |activity|
         li
           = link_to activity.name, activity
     .btn-group
       .pull-left
-          = link_to "See all events", activities_path, class: "btn btn-info"
+          = link_to "See all events", activities_path, class: "btn btn-warning"
     .btn-group
       .pull-left
           = link_to "Create a new activity", new_activity_path, class: "btn btn-danger"
 
   .offset1.span5
-    h1 Messages
+    h2 Messages
     - if current_user
       = render "form"
 

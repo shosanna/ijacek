@@ -1,6 +1,5 @@
 .entry {
   margin: 20px 0;
-
   .meta {
     height: 60px;
   }
@@ -12,23 +11,15 @@
   .text {
     margin-top: 5px;
     border-radius: 5px;
-    box-shadow: 0 0 3px #1B0B1D;
     padding: 10px;
-    background-color: #F39C12;
-  }
+    color: #5C401F;
+     background: #EDD9E3;
 
-  &:nth-child(even) .text {
-    background-color: #1ABC9C;
   }
 
   .big {
     font-size: 20px;
   }
-  .tooltip.fade.bottom.in {
-
-  }
-    .tooltip-inner {
-    }
 }
 
 

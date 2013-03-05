@@ -2,12 +2,15 @@ $navbarLinkColor: #fff;
 $navbarBackground: #5C401F;
 $navbarBackgroundHighlight: #7A6042;
 $gridColumnWidth: 65px;
+$dropdownBackground: #5C401F;
+$dropdownLinkColor: #EDD9E3;
+$dropdownLinkBackgroundHover: #E7C794;
+$dropdownLinkColorHover: #5C401F;
 
 @import "font-awesome";
 @import "bootstrap";
-@import "flat-ui";
 @import "entries";
-@import "flat";
+
 
 // general styles//
 body {
@@ -18,6 +21,20 @@ font-size: 14px;
 
 .box {
   margin-left: 15px;
+}
+
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+  color: #5C401F;
+  background: #E7C794;
+}
+
+.navbar .pull-right > li > .dropdown-menu:before {
+  display: none;
+}
+
+.navbar .pull-right > li > .dropdown-menu:after {
+  display: none;
 }
 
 h1,h2,h3 {
@@ -31,7 +48,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #3498DB;
+  color: #5C401F;
 }
 
 img.header {
