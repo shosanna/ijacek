@@ -6,7 +6,7 @@ class Person < ActiveRecord::Base
 
 
   def self.schedule
-    ["Tyna", "Tom", "Simonka", "Kuba", "Pavel"]
+    %w(Tyna Tom Simonka Kuba Pavel)
   end
 
   def self.current
