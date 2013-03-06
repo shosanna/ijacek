@@ -16,7 +16,7 @@
           - else
               puts She has it since
 
-        td = Person.current.time
+        td = Person.current.exchange_at.to_date
       tr
         td Next person will be
         td
@@ -24,7 +24,7 @@
       tr
         td Next exchange should be
         td
-           = Person.current.time_exchange
+           = (Person.current.exchange_at + 14.days).to_date
 
     = link_to "Confirm exchange", ijacek_index_path, class: "btn btn-danger", method: "post", confirm: "Are you sure? That can not be undone!!"
 

@@ -4,6 +4,9 @@ class Person < ActiveRecord::Base
   has_many :entries, :dependent => :destroy
   has_many :activities
 
+  has_many :answers
+  has_many :questions, through: :answers
+
 
   def self.schedule
     %w(Tyna Tom Simonka Kuba Pavel)
@@ -31,6 +34,8 @@ class Person < ActiveRecord::Base
 
   def self.change_next
     current = self.current
+    name = nil
+
     if current
       position = schedule.index(current.username) || 0
 
@@ -41,23 +46,15 @@ class Person < ActiveRecord::Base
       # ten dalsi po current se nastavi na true
       new_position = (position + 1) % schedule.length
       name = schedule[new_position]
-      next_person = Person.find_by_username(name)
-      next_person.ijacek = true
-      next_person.save
     else
-      first = schedule[0]
-      first_person = Person.find_by_username(first)
-      first_person.ijacek = true
-      first_person.save
+      name = schedule[0]
     end
 
+    new_person = Person.find_by_username(name)
     # Nastavim datum kdy se zavolala tahle funkce = odky je ijacek u cloveka, plus 14 dni je datum kdy je dalsi vymena
-    i = Time.now.strftime("%m/%d/%Y")
-    current.time = i.to_s
-    t = Time.now + (2*7*24*60*60)
-    t = t.strftime("%m/%d/%Y")
-    current.time_exchange = t.to_s
-    current.save
+    new_person.ijacek = true
+    new_person.exchange_at = Time.now
+    new_person.save
   end
 
   def image_or_default

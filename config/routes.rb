@@ -1,5 +1,7 @@
 Ijacek::Application.routes.draw do
+  resources :questions
   resources :entries
+  resources :answers
 
   root to: "entries#index"
   resources :sessions, only: [:new, :create, :destroy]

@@ -21,17 +21,12 @@ p.pull-right
     | Dark orange = My attendance on Ijacek activities
   p
     | Light orange = Activities which I did not attend
+
 .span4
   h3 My Questions
-  p
-    | Question nr. 1
-  p
-    | Answer ....
+  - if @person == current_user
+    = render "answers/form"
 
-
-
-
-
-
-
-
+  - @person.answers.each do |answer|
+    p = answer.question.text
+    p = answer.text

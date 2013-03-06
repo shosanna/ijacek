@@ -11,23 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130306195005) do
+ActiveRecord::Schema.define(:version => 20130306222920) do
 
   create_table "activities", :force => true do |t|
-    t.text     "description"
-    t.string   "location"
-    t.string   "name"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.string   "activity_person_id"
+    t.text      "description"
+    t.string    "location"
+    t.string    "name"
+    t.timestamp "created_at",         :null => false
+    t.timestamp "updated_at",         :null => false
+    t.string    "activity_person_id"
+  end
+
+  create_table "answers", :force => true do |t|
+    t.integer  "question_id"
+    t.integer  "person_id"
+    t.text     "text"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "entries", :force => true do |t|
-    t.text     "text"
-    t.string   "author"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "person_id"
+    t.text      "text"
+    t.string    "author"
+    t.timestamp "created_at", :null => false
+    t.timestamp "updated_at", :null => false
+    t.integer   "person_id"
   end
 
   create_table "people", :force => true do |t|
@@ -39,8 +47,13 @@ ActiveRecord::Schema.define(:version => 20130306195005) do
     t.string   "password_digest"
     t.string   "image"
     t.boolean  "ijacek"
-    t.string   "time"
-    t.string   "time_exchange"
+    t.datetime "exchange_at"
+  end
+
+  create_table "questions", :force => true do |t|
+    t.text     "text"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
