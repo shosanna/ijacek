@@ -5,8 +5,10 @@ class PeopleController < ApplicationController
 
   def show
     @activities = Activity.all
-    @activities.select! do |activity|
+    @select = @activities.select! do |activity|
       activity.activity_person_id.include?(@person.id)
+
+
     end
   end
 

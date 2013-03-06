@@ -24,3 +24,15 @@ border-radius: 5px;
   margin: auto;
   display: block;
 }
+
+.span3 {
+  text-align: center;
+}
+
+.span4 p:nth-child(odd) {
+  font-style: italic;
+}
+
+.span4 a {
+  color: #fff;
+}
