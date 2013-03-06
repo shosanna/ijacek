@@ -17,4 +17,9 @@ table.table.table-striped
       = link_to "I was there!", rsvp_activity_path(@activity), :method => :put , class: "btn btn-warning"
 
 .btn-group
-  = link_to "Edit activity", edit_activity_path, class: "btn btn-info"
+  = link_to "Edit activity", edit_activity_path, class: "btn btn-danger"
+.btn-group
+  = link_to "See all events", activities_path, class: "btn btn-warning"
+- if current_user && @activity.activity_person_id.include?(current_user.id)
+  .btn-group
+    = link_to "Err... I wasn't there!", un_rsvp_activity_path(@activity), :method => :delete , class: "btn btn-danger"

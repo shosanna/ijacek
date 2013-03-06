@@ -47,6 +47,14 @@ class ActivitiesController < ApplicationController
     redirect_to activity_path
   end
 
+  def un_rsvp
+    @activity = Activity.find(params[:id])
+    @activity.activity_person_id.delete(current_user.id)
+    @activity.save
+    flash[:notice] = "You deleted yourself from the event!"
+    redirect_to activity_path
+  end
+
   def update
     params[:activity][:activity_person_id].reject!(&:blank?)
     @activity.update_attributes(params[:activity])
