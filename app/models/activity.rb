@@ -6,4 +6,6 @@ class Activity < ActiveRecord::Base
   before_save do
     self.activity_person_id = [] unless self.activity_person_id
   end
+
+  scope :recent, order("created_at DESC").limit(5)
 end

@@ -7,8 +7,6 @@ class PeopleController < ApplicationController
     @activities = Activity.all
     @select = @activities.select! do |activity|
       activity.activity_person_id.include?(@person.id)
-
-
     end
   end
 
