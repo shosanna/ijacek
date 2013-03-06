@@ -1,6 +1,6 @@
 = form_for Answer.new do |f|
   p
-    = f.select :question, Question.all.map {|p| [ p.text, p.id ] }
+    = f.select :question_id, Question.all.map {|p| [ p.text, p.id ] }
   p
     = f.text_field :text, placeholder: "Answer the question", class: "span5"
   button.btn.btn-warning type="submit" Submit
