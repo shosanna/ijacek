@@ -26,9 +26,9 @@ p.pull-right
   h3 My Questions
   - if @person == current_user
     = render "answers/form"
-    - @person.answers.each do |answer|
-      .light
-        p = answer.question.text
-      br
-      p = answer.text
-      br
+  - @person.answers.each do |answer|
+    .light
+      p = answer.question.text
+    br
+    p = answer.text
+    br
