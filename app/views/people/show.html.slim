@@ -2,7 +2,7 @@ h2 = @person.username
 .show_image
   = image_tag @person.image_or_default
 .divide
-.orange.center
+.light.center
   p
     = @person.info
 .divide
@@ -26,7 +26,9 @@ p.pull-right
   h3 My Questions
   - if @person == current_user
     = render "answers/form"
-
-  - @person.answers.each do |answer|
-    p = answer.question.text
-    p = answer.text
+    - @person.answers.each do |answer|
+      .light
+        p = answer.question.text
+      br
+      p = answer.text
+      br

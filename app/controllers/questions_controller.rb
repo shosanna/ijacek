@@ -3,7 +3,7 @@ class QuestionsController < ApplicationController
     @question = Question.new(params[:question])
     @question.save!
     flash.notice = "Question created!"
-    redirect_to root_path
+    redirect_to new_question_path
   end
 
   def index
@@ -13,6 +13,6 @@ class QuestionsController < ApplicationController
     @question = Question.find(params[:id])
     @question.destroy
     flash.notice = "Question deleted!"
-    redirect_to entries_path
+    redirect_to root_path
   end
 end
