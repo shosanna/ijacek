@@ -39,40 +39,20 @@
     .btn-group
       .pull-left
           = link_to "Create a new activity", new_activity_path, class: "btn btn-danger"
+
     h3.margin-top Sample questions & answers
     .sample
-      p
-        ' Q:
-        = @answer.question.text
-      p
-        ' A:
-        = @answer.text
-      p
-        .autor
-          ' Answered by:
-          = @answer.person.username
-    .sample
-      p
-        ' Q:
-        = @answer.question.text
-      p
-        ' A:
-        = @answer.text
-      p
-        .autor
-          ' Answered by:
-          = @answer.person.username
-    .sample
-      p
-        ' Q:
-        = @answer.question.text
-      p
-        ' A:
-        = @answer.text
-      p
-        .autor
-          ' Answered by:
-          = @answer.person.username
+      - @answers.each do |answer|
+        p
+          ' Q:
+          = answer.question.text
+        p
+          ' A:
+          = answer.text
+        p
+          .autor
+            ' Answered by:
+            = answer.person.username
 
   .offset1.span5
     h2 Messages
