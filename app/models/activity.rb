@@ -2,6 +2,7 @@ class Activity < ActiveRecord::Base
   attr_accessible :description, :location, :activity_person_id, :name
   belongs_to :person
   serialize :activity_person_id
+  has_many :photos
 
   before_save do
     self.activity_person_id = [] unless self.activity_person_id

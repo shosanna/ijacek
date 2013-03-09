@@ -41,7 +41,6 @@ class EntriesController < ApplicationController
   end
 
   def destroy
-
     @text = @entry.text
     @entry.destroy
     redirect_to entries_path

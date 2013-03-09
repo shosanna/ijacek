@@ -39,6 +39,8 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass-rails'
 gem 'flat-ui-rails'
+gem 'carrierwave'
+gem 'fog'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'

@@ -33,6 +33,7 @@ class ActivitiesController < ApplicationController
 
   def show
     @activity = Activity.find(params[:id])
+    @photo = @activity.photos.build
   end
 
   def index

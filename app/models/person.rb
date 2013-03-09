@@ -1,12 +1,11 @@
 class Person < ActiveRecord::Base
   has_secure_password
-  attr_accessible :gender, :info, :password_hash, :password_salt, :username, :ijacek
+  attr_protected :gender, :info, :password_hash, :password_salt, :username, :ijacek
   has_many :entries, :dependent => :destroy
   has_many :activities
 
   has_many :answers
   has_many :questions, through: :answers
-
 
   def self.schedule
     %w(Tyna Tom Simonka Kuba Pavel)

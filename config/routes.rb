@@ -13,13 +13,23 @@ Ijacek::Application.routes.draw do
 
   resources :images
   resources :activities do
+    # GET /activities/:activity_id/photos/:id
+    # link_to "nuf", activity_photo_path(photo.activity, photo), method: :delete
+    # link_to "nuf", [photo.activity, photo], method: :delete
+    #
+    # GET /photos/:id
+    # link_to "nuf", photo_path(photo)
+    #
+    #
+    #
+    # params[:activity_id]
+    # params[:id]
+    resources :photos
+
     member do
       # PUT /activities/1/rsvp
       # rsvp_activity_path(activity), method: :put
       put :rsvp
-    end
-
-     member do
       delete :un_rsvp
     end
 
