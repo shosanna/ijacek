@@ -45,4 +45,8 @@
     - if current_user
       = render "form"
 
-      = render @entries
+      .preview
+        = render @entries.limit(10)
+        button.btn.btn-danger.see_all See all
+      .all_entries
+        = render @entries

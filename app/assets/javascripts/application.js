@@ -16,7 +16,11 @@
 //= require jquery-ui
 //= require_tree .
 
-$(function() {
+$(document).ready(function() {
   $("img.header").draggable();
-  $("span.pie").peity("pie")
+  $("span.pie").peity("pie");
+  $("button.see_all").on("click", function(){
+    $(".preview").hide();
+    $(".all_entries").show();
+  });
 })
