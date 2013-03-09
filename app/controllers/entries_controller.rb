@@ -20,6 +20,8 @@ class EntriesController < ApplicationController
 
     @activities = Activity.recent
     @activity = Activity.new
+
+    @answer = Answer.all.sample
   end
 
   def create
