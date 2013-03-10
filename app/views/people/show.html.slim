@@ -16,6 +16,11 @@
     .orange
       - @select.each do |activity|
         li = link_to activity.name, activity
+    h3 I missed these
+    .red
+      - @unselect.each do |activity|
+        li = link_to activity.name, activity
+
   .span3
     h3 My statitistics
     span.pie data-diameter="150" = "#{@select.size}/#{Activity.all.size}"

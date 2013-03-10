@@ -5,6 +5,5 @@ module ApplicationHelper
       content_tag :i, "", class: icon
     end
   end
-
 end
 
