@@ -1,7 +1,9 @@
 class PhotosController < ApplicationController
-
   def create
-    photo = Photo.create!(params[:photo])
+    photo = Photo.new(params[:photo])
+    unless photo.save
+      flash.notice = "Photo was not saved"
+    end
     redirect_to photo.activity
   end
 
