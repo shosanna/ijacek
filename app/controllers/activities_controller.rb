@@ -36,7 +36,8 @@ class ActivitiesController < ApplicationController
 
   def show
     @activity = Activity.find(params[:id])
-    @photo = @activity.photos.build
+    @photo = Photo.new
+    @photo.activity_id = @activity.id
   end
 
   def index
