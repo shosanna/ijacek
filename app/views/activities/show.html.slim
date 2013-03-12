@@ -24,12 +24,12 @@ table.table.table-striped
   .btn-group
     = link_to "Err... I wasn't there!", un_rsvp_activity_path(@activity), :method => :delete , class: "btn btn-danger"
 
-/ h3 Photos!
-/ h4 Upload a new photo
-/ = render "photos/form"
-/ .photos
-/   - @activity.photos.each do |photo|
-/     .photo
-/       = image_tag photo.photo_url
-/       / p = link_to_icon "icon-remove", activity_photo_path(@activity, photo), method: :delete
+h3 Photos!
+h4 Upload a new photo
+= render "photos/form"
+.photos
+  - @activity.photos.each do |photo|
+    .photo
+      = image_tag photo.photo_url(:thumb)
+      / p = link_to_icon "icon-remove", activity_photo_path(@activity, photo), method: :delete
 

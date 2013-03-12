@@ -19,7 +19,10 @@ class ActivitiesController < ApplicationController
   end
 
   def create
-    params[:activity][:activity_person_id].reject!(&:blank?)
+    if params[:activity][:activity_person_id]
+      params[:activity][:activity_person_id].reject!(&:blank?)
+    end
+
     @activity = Activity.new(params[:activity])
     @activity.save
     flash.notice = "Activity created, hope it was fun!"
@@ -57,7 +60,9 @@ class ActivitiesController < ApplicationController
   end
 
   def update
-    params[:activity][:activity_person_id].reject!(&:blank?)
+    if params[:activity][:activity_person_id]
+      params[:activity][:activity_person_id].reject!(&:blank?)
+    end
     @activity.update_attributes(params[:activity])
     redirect_to activity_path
     flash.notice = "Entry changed!"
