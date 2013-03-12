@@ -30,6 +30,6 @@ h4 Upload a new photo
 .photos
   - @activity.photos.each do |photo|
     .photo
-      = image_tag photo.photo_url(:thumb)
+      = link_to image_tag(photo.photo_url(:thumb)), photo.photo_url
       p = link_to_icon "icon-remove", activity_photo_path(@activity, photo), method: :delete
 
