@@ -2,8 +2,7 @@
   background: #F89406;
   padding: 10px;
   border-radius: 5px;
-  float: left;
-  width: 974px;
+  overflow: hidden;
 }
 
 .photo {
@@ -11,4 +10,23 @@
   margin: 5px;
   border-radius: 5px;
   float: left;
+}
+
+.activities_comments {
+  background: rgba(189, 54, 47, 0.5);
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+
+  .activity_comment {
+    margin: 5px;
+    display: block;
+    border-bottom: 1px solid rgba(92, 64, 31, 0.3);
+
+  }
+}
+
+
+h3 {
+  margin-top: 20px;
 }
