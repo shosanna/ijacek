@@ -20,6 +20,37 @@
   .big {
     font-size: 20px;
   }
+  .comments {
+     background: rgba(231, 199, 148, 0.6);
+     margin-left: 20px;
+     border-radius: 5px;
+     width: 380px;
+  }
+  .comment {
+    border-radius: 5px;
+    padding: 5px;
+    color: #5C401F;
+    margin: 3px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(92, 64, 31, 0.7);
+
+    .comment-text {
+      width: 320px;
+      float: left;
+    }
+  }
+   button {
+    margin: 0px;
+   }
+
+   .comment-form {
+      margin: 5px 0;
+
+      input {
+        margin: 3px;
+      }
+   }
+
 }
 
 

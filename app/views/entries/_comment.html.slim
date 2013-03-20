@@ -1,0 +1,8 @@
+.comment
+  .comment-text
+    = comment.person.username
+    span
+      ':
+    span
+      = comment.text
+  span.time #{comment.created_at.strftime("%d.%m")}

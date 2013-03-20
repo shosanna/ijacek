@@ -3,7 +3,7 @@ class Person < ActiveRecord::Base
   attr_protected :gender, :info, :password_hash, :password_salt, :username, :ijacek
   has_many :entries, :dependent => :destroy
   has_many :activities
-
+  has_many :comments
   has_many :answers
   has_many :questions, through: :answers
 

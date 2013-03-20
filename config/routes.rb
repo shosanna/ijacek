@@ -10,7 +10,7 @@ Ijacek::Application.routes.draw do
 
   resources :people
   resources :ijacek
-
+  resources :comments
   resources :images
   resources :activities do
     # GET /activities/:activity_id/photos/:id

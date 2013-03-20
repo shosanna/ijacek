@@ -7,6 +7,15 @@
     .pull-right
       = link_to_icon "icon-edit", edit_entry_path(entry)
       = link_to_icon "icon-remove", entry_path(entry), method: :delete
-    / .time #{distance_of_time_in_words_to_now entry.created_at} ago
+      span.time #{entry.created_at.strftime("%d.%m")}
 
   .text = entry.text
+
+  .comments
+    = form_for Comment.new, html: { class: "form-horizontal comment-form" } do |f|
+      = f.text_field :text, placeholder: "Reply.."
+      = hidden_field_tag "comment[person_id]", current_user.id
+      = hidden_field_tag "comment[entry_id]", entry.id
+      button.btn type="submit" Submit
+
+    = render partial: 'entries/comment', collection: entry.comments
