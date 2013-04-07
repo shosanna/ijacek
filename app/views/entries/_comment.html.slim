@@ -5,4 +5,6 @@
       ':
     span
       = comment.text
-  span.time #{comment.created_at.strftime("%d.%m")}
+  span.time #{comment.created_at.strftime("%d.%m %H.%M")}
+  .destroy
+    = link_to_icon "icon-remove", comment_path(comment), method: :delete

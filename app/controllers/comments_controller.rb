@@ -9,4 +9,11 @@ def create
   end
 end
 
+def destroy
+  @comment = Comment.find(params[:id])
+  @comment.destroy
+  redirect_to entries_path
+  flash.notice = "<p class='red'> Your entry '<em>#{@text}</em>' has been removed </p>"
+end
+
 end

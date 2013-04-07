@@ -1,4 +1,4 @@
-.entry {
+  .entry {
   margin: 10px 0;
   .meta {
     height: 55px;
@@ -35,8 +35,13 @@
     border-bottom: 1px solid rgba(92, 64, 31, 0.7);
 
     .comment-text {
-      width: 320px;
+      width: 280px;
       float: left;
+    }
+
+    .destroy {
+      position: absolute;
+      right: 100px;
     }
   }
    button {

@@ -7,9 +7,9 @@
     .pull-right
       = link_to_icon "icon-edit", edit_entry_path(entry)
       = link_to_icon "icon-remove", entry_path(entry), method: :delete
-      span.time #{entry.created_at.strftime("%d.%m")}
+      span.time #{entry.created_at.strftime("%d.%m %H.%M")}
 
-  .text = entry.text
+  .text = text_to_link entry.text
 
   .comments
     = form_for Comment.new, html: { class: "form-horizontal comment-form" } do |f|

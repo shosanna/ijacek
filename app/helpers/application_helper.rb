@@ -5,5 +5,9 @@ module ApplicationHelper
       content_tag :i, "", class: icon
     end
   end
+
+  def text_to_link(text)
+
+  end
 end
 
