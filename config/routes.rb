@@ -8,6 +8,10 @@ Ijacek::Application.routes.draw do
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
 
+  namespace :api do
+    resources :events
+  end
+
   resources :people
   resources :ijacek
   resources :comments

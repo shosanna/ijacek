@@ -3,31 +3,21 @@
 - if current_user
   .row
     .span6
-      h3 Ijacek exchanges
+      h3 Last comments
+      - if !@comments.empty?
+        ol
+          - @comments.each do |comment|
+            li
+              = comment.text
+              '  at event:
+              = link_to comment.commentable.name, comment.commentable
+              '  (written by
+              - person = Person.find_by_id(comment.person_id).username
+              =   person
+              ' )
+      - else
+        p There are no new comments.
 
-      table.table.table-striped
-        tr
-          td Ijacek is now with
-          td
-            = Person.current.username
-        tr
-          td
-            - if Person.current.gender == 1
-                puts He has it since
-            - else
-                puts She has it since
-
-          td = Person.current.exchange_at.try(:to_date)
-        tr
-          td Next person will be
-          td
-             = Person.next.username
-        tr
-          td Next exchange should be
-          td
-             = (Person.current.exchange_at + 14.days).try(:to_date)
-
-      = link_to "Confirm exchange", ijacek_index_path, class: "btn btn-danger", method: "post", confirm: "Are you sure? That can not be undone!!"
 
       h3.margin-top Recent events
       ol

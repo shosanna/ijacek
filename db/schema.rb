@@ -14,12 +14,12 @@
 ActiveRecord::Schema.define(:version => 20130320125022) do
 
   create_table "activities", :force => true do |t|
-    t.text      "description"
-    t.string    "location"
-    t.string    "name"
-    t.timestamp "created_at",         :null => false
-    t.timestamp "updated_at",         :null => false
-    t.string    "activity_person_id"
+    t.text     "description"
+    t.string   "location"
+    t.string   "name"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "activity_person_id"
   end
 
   create_table "answers", :force => true do |t|
@@ -42,11 +42,11 @@ ActiveRecord::Schema.define(:version => 20130320125022) do
   add_index "comments", ["person_id"], :name => "index_comments_on_person_id"
 
   create_table "entries", :force => true do |t|
-    t.text      "text"
-    t.string    "author"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
-    t.integer   "person_id"
+    t.text     "text"
+    t.string   "author"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "person_id"
   end
 
   create_table "people", :force => true do |t|

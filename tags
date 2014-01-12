@@ -1,0 +1,235 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+20130217220551_entry.rb	db/migrate/20130217220551_entry.rb	1;"	F
+20130220105844_create_people.rb	db/migrate/20130220105844_create_people.rb	1;"	F
+20130220110818_add_person_id_to_entries.rb	db/migrate/20130220110818_add_person_id_to_entries.rb	1;"	F
+20130220165627_third_try.rb	db/migrate/20130220165627_third_try.rb	1;"	F
+20130222180642_add_image_to_people.rb	db/migrate/20130222180642_add_image_to_people.rb	1;"	F
+20130224195354_add_ijacek_to_people.rb	db/migrate/20130224195354_add_ijacek_to_people.rb	1;"	F
+20130226230638_add_time_to_people.rb	db/migrate/20130226230638_add_time_to_people.rb	1;"	F
+20130227151442_add_time_exchange_to_people.rb	db/migrate/20130227151442_add_time_exchange_to_people.rb	1;"	F
+20130301212734_create_activities.rb	db/migrate/20130301212734_create_activities.rb	1;"	F
+20130301222155_remove_person_id_from_activities.rb	db/migrate/20130301222155_remove_person_id_from_activities.rb	1;"	F
+20130306195005_change_description_in_activities.rb	db/migrate/20130306195005_change_description_in_activities.rb	1;"	F
+20130306221522_fix_person_exchange_time.rb	db/migrate/20130306221522_fix_person_exchange_time.rb	1;"	F
+20130306222626_create_questions.rb	db/migrate/20130306222626_create_questions.rb	1;"	F
+20130306222920_create_answers.rb	db/migrate/20130306222920_create_answers.rb	1;"	F
+20130308203952_create_photos.rb	db/migrate/20130308203952_create_photos.rb	1;"	F
+20130308204302_add_photo_to_photos.rb	db/migrate/20130308204302_add_photo_to_photos.rb	1;"	F
+20130308204509_add_activity_id_to_photos.rb	db/migrate/20130308204509_add_activity_id_to_photos.rb	1;"	F
+20130320094947_create_comments.rb	db/migrate/20130320094947_create_comments.rb	1;"	F
+20130320125022_make_comments_polymorphic.rb	db/migrate/20130320125022_make_comments_polymorphic.rb	1;"	F
+404.html	public/404.html	1;"	F
+422.html	public/422.html	1;"	F
+500.html	public/500.html	1;"	F
+ActivitiesController	app/controllers/activities_controller.rb	/^class ActivitiesController < ApplicationController$/;"	c
+Activity	app/models/activity.rb	/^class Activity < ActiveRecord::Base$/;"	c
+AddActivityIdToPhotos	db/migrate/20130308204509_add_activity_id_to_photos.rb	/^class AddActivityIdToPhotos < ActiveRecord::Migration$/;"	c
+AddIjacekToPeople	db/migrate/20130224195354_add_ijacek_to_people.rb	/^class AddIjacekToPeople < ActiveRecord::Migration$/;"	c
+AddImageToPeople	db/migrate/20130222180642_add_image_to_people.rb	/^class AddImageToPeople < ActiveRecord::Migration$/;"	c
+AddPersonIdToEntries	db/migrate/20130220110818_add_person_id_to_entries.rb	/^class AddPersonIdToEntries < ActiveRecord::Migration$/;"	c
+AddPhotoToPhotos	db/migrate/20130308204302_add_photo_to_photos.rb	/^class AddPhotoToPhotos < ActiveRecord::Migration$/;"	c
+AddTimeExchangeToPeople	db/migrate/20130227151442_add_time_exchange_to_people.rb	/^class AddTimeExchangeToPeople < ActiveRecord::Migration$/;"	c
+AddTimeToPeople	db/migrate/20130226230638_add_time_to_people.rb	/^class AddTimeToPeople < ActiveRecord::Migration$/;"	c
+Answer	app/models/answer.rb	/^class Answer < ActiveRecord::Base$/;"	c
+AnswersController	app/controllers/answers_controller.rb	/^class AnswersController < ApplicationController$/;"	c
+Api	app/controllers/api/events_controller.rb	/^class Api::EventsController < ApiController$/;"	c
+ApiController	app/controllers/api_controller.rb	/^  class ApiController < ActionController::Base$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Ijacek
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ChangeDescriptionInActivities	db/migrate/20130306195005_change_description_in_activities.rb	/^class ChangeDescriptionInActivities < ActiveRecord::Migration$/;"	c
+Comment	app/models/comment.rb	/^class Comment < ActiveRecord::Base$/;"	c
+CommentsController	app/controllers/comments_controller.rb	/^class CommentsController < ApplicationController$/;"	c
+CreateActivities	db/migrate/20130301212734_create_activities.rb	/^class CreateActivities < ActiveRecord::Migration$/;"	c
+CreateAnswers	db/migrate/20130306222920_create_answers.rb	/^class CreateAnswers < ActiveRecord::Migration$/;"	c
+CreateComments	db/migrate/20130320094947_create_comments.rb	/^class CreateComments < ActiveRecord::Migration$/;"	c
+CreatePeople	db/migrate/20130220105844_create_people.rb	/^class CreatePeople < ActiveRecord::Migration$/;"	c
+CreatePhotos	db/migrate/20130308203952_create_photos.rb	/^class CreatePhotos < ActiveRecord::Migration$/;"	c
+CreateQuestions	db/migrate/20130306222626_create_questions.rb	/^class CreateQuestions < ActiveRecord::Migration$/;"	c
+CustomPlan	custom_plan.rb	/^class CustomPlan < Zeus::Rails$/;"	c
+EntriesController	app/controllers/entries_controller.rb	/^class EntriesController < ApplicationController$/;"	c
+Entry	app/models/entry.rb	/^class Entry < ActiveRecord::Base$/;"	c
+Entry	db/migrate/20130217220551_entry.rb	/^class Entry < ActiveRecord::Migration$/;"	c
+FixPersonExchangeTime	db/migrate/20130306221522_fix_person_exchange_time.rb	/^class FixPersonExchangeTime < ActiveRecord::Migration$/;"	c
+Ijacek	config/application.rb	/^module Ijacek$/;"	m
+IjacekController	app/controllers/ijacek_controller.rb	/^class IjacekController < ApplicationController$/;"	c
+ImagesController	app/controllers/images_controller.rb	/^class ImagesController < ApplicationController$/;"	c
+MakeCommentsPolymorphic	db/migrate/20130320125022_make_comments_polymorphic.rb	/^class MakeCommentsPolymorphic < ActiveRecord::Migration$/;"	c
+Peity.var.func	app/assets/javascripts/jquery.peity.js	/^      func = function(_, i) {$/;"	f
+PeityPrototype	app/assets/javascripts/jquery.peity.js	/^  PeityPrototype.draw = function() {$/;"	m
+PeityPrototype	app/assets/javascripts/jquery.peity.js	/^  PeityPrototype.prepareCanvas = function(width, height) {$/;"	m
+PeityPrototype	app/assets/javascripts/jquery.peity.js	/^  PeityPrototype.values = function() {$/;"	m
+PeopleController	app/controllers/people_controller.rb	/^class PeopleController < ApplicationController$/;"	c
+Person	app/models/person.rb	/^class Person < ActiveRecord::Base$/;"	c
+Photo	app/models/photo.rb	/^class Photo < ActiveRecord::Base$/;"	c
+PhotosController	app/controllers/photos_controller.rb	/^class PhotosController < ApplicationController$/;"	c
+PhotosUploader	app/uploaders/photos_uploader.rb	/^class PhotosUploader < CarrierWave::Uploader::Base$/;"	c
+Question	app/models/question.rb	/^class Question < ActiveRecord::Base$/;"	c
+QuestionsController	app/controllers/questions_controller.rb	/^class QuestionsController < ApplicationController$/;"	c
+RemovePersonIdFromActivities	db/migrate/20130301222155_remove_person_id_from_activities.rb	/^class RemovePersonIdFromActivities < ActiveRecord::Migration$/;"	c
+SessionsController	app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+ThirdTry	db/migrate/20130220165627_third_try.rb	/^class ThirdTry < ActiveRecord::Migration$/;"	c
+activities	db/structure.sql	/^CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "location" varchar(255), "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "activity_person_id" varchar(255));$/;"	t
+activities.activity_person_id	db/structure.sql	/^CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "location" varchar(255), "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "activity_person_id" varchar(255));$/;"	F
+activities.created_at	db/structure.sql	/^CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "location" varchar(255), "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "activity_person_id" varchar(255));$/;"	F
+activities.description	db/structure.sql	/^CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "location" varchar(255), "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "activity_person_id" varchar(255));$/;"	F
+activities.id	db/structure.sql	/^CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "location" varchar(255), "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "activity_person_id" varchar(255));$/;"	F
+activities.location	db/structure.sql	/^CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "location" varchar(255), "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "activity_person_id" varchar(255));$/;"	F
+activities.name	db/structure.sql	/^CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "location" varchar(255), "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "activity_person_id" varchar(255));$/;"	F
+activities.updated_at	db/structure.sql	/^CREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "location" varchar(255), "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "activity_person_id" varchar(255));$/;"	F
+activities_controller.rb	app/controllers/activities_controller.rb	1;"	F
+activities_controller_spec.rb	spec/controllers/activities_controller_spec.rb	1;"	F
+activity.rb	app/models/activity.rb	1;"	F
+answer.rb	app/models/answer.rb	1;"	F
+answer_spec.rb	spec/models/answer_spec.rb	1;"	F
+answers_controller.rb	app/controllers/answers_controller.rb	1;"	F
+api_controller.rb	app/controllers/api_controller.rb	1;"	F
+application.js	app/assets/javascripts/application.js	1;"	F
+application.rb	config/application.rb	1;"	F
+application_controller.rb	app/controllers/application_controller.rb	1;"	F
+application_helper.rb	app/helpers/application_helper.rb	1;"	F
+backtrace_silencers.rb	config/initializers/backtrace_silencers.rb	1;"	F
+boot.rb	config/boot.rb	1;"	F
+capybara-201303042139076846823802.html	tmp/capybara/capybara-201303042139076846823802.html	1;"	F
+capybara-20130304214229419305499.html	tmp/capybara/capybara-20130304214229419305499.html	1;"	F
+capybara-201303042143094233359815.html	tmp/capybara/capybara-201303042143094233359815.html	1;"	F
+capybara-201303042146354139724162.html	tmp/capybara/capybara-201303042146354139724162.html	1;"	F
+capybara-201303042148494011528312.html	tmp/capybara/capybara-201303042148494011528312.html	1;"	F
+capybara-201303042152145635478961.html	tmp/capybara/capybara-201303042152145635478961.html	1;"	F
+carrierwave.rb	config/initializers/carrierwave.rb	1;"	F
+change	db/migrate/20130217220551_entry.rb	/^  def change$/;"	f	class:Entry
+change	db/migrate/20130220105844_create_people.rb	/^  def change$/;"	f	class:CreatePeople
+change	db/migrate/20130220110818_add_person_id_to_entries.rb	/^  def change$/;"	f	class:AddPersonIdToEntries
+change	db/migrate/20130220165627_third_try.rb	/^  def change$/;"	f	class:ThirdTry
+change	db/migrate/20130222180642_add_image_to_people.rb	/^  def change$/;"	f	class:AddImageToPeople
+change	db/migrate/20130224195354_add_ijacek_to_people.rb	/^  def change$/;"	f	class:AddIjacekToPeople
+change	db/migrate/20130227151442_add_time_exchange_to_people.rb	/^  def change$/;"	f	class:AddTimeExchangeToPeople
+change	db/migrate/20130301212734_create_activities.rb	/^  def change$/;"	f	class:CreateActivities
+change	db/migrate/20130306195005_change_description_in_activities.rb	/^  def change$/;"	f	class:ChangeDescriptionInActivities
+change	db/migrate/20130306221522_fix_person_exchange_time.rb	/^  def change$/;"	f	class:FixPersonExchangeTime
+change	db/migrate/20130306222626_create_questions.rb	/^  def change$/;"	f	class:CreateQuestions
+change	db/migrate/20130306222920_create_answers.rb	/^  def change$/;"	f	class:CreateAnswers
+change	db/migrate/20130308203952_create_photos.rb	/^  def change$/;"	f	class:CreatePhotos
+change	db/migrate/20130308204302_add_photo_to_photos.rb	/^  def change$/;"	f	class:AddPhotoToPhotos
+change	db/migrate/20130308204509_add_activity_id_to_photos.rb	/^  def change$/;"	f	class:AddActivityIdToPhotos
+change	db/migrate/20130320094947_create_comments.rb	/^  def change$/;"	f	class:CreateComments
+change	db/migrate/20130320125022_make_comments_polymorphic.rb	/^  def change$/;"	f	class:MakeCommentsPolymorphic
+change_next	app/models/person.rb	/^  def self.change_next$/;"	F	class:Person
+check	app/controllers/activities_controller.rb	/^  def check$/;"	f	class:ActivitiesController
+check	app/controllers/entries_controller.rb	/^  def check$/;"	f	class:EntriesController
+check	app/controllers/people_controller.rb	/^  def check$/;"	f	class:PeopleController
+comment.rb	app/models/comment.rb	1;"	F
+comment_spec.rb	spec/models/comment_spec.rb	1;"	F
+comments_controller.rb	app/controllers/comments_controller.rb	1;"	F
+create	app/controllers/activities_controller.rb	/^  def create$/;"	f	class:ActivitiesController
+create	app/controllers/answers_controller.rb	/^  def create$/;"	f	class:AnswersController
+create	app/controllers/comments_controller.rb	/^def create$/;"	f	class:CommentsController
+create	app/controllers/entries_controller.rb	/^  def create$/;"	f	class:EntriesController
+create	app/controllers/ijacek_controller.rb	/^  def create$/;"	f	class:IjacekController
+create	app/controllers/photos_controller.rb	/^  def create$/;"	f	class:PhotosController
+create	app/controllers/questions_controller.rb	/^  def create$/;"	f	class:QuestionsController
+create	app/controllers/sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
+current	app/models/person.rb	/^  def self.current$/;"	F	class:Person
+current_user	app/controllers/application_controller.rb	/^  def current_user$/;"	f	class:ApplicationController
+custom_plan.rb	custom_plan.rb	1;"	F
+destroy	app/controllers/answers_controller.rb	/^  def destroy$/;"	f	class:AnswersController
+destroy	app/controllers/comments_controller.rb	/^def destroy$/;"	f	class:CommentsController
+destroy	app/controllers/entries_controller.rb	/^  def destroy$/;"	f	class:EntriesController
+destroy	app/controllers/photos_controller.rb	/^  def destroy$/;"	f	class:PhotosController
+destroy	app/controllers/questions_controller.rb	/^  def destroy$/;"	f	class:QuestionsController
+destroy	app/controllers/sessions_controller.rb	/^  def destroy$/;"	f	class:SessionsController
+development.rb	config/environments/development.rb	1;"	F
+down	db/migrate/20130226230638_add_time_to_people.rb	/^  def down$/;"	f	class:AddTimeToPeople
+down	db/migrate/20130301222155_remove_person_id_from_activities.rb	/^  def down$/;"	f	class:RemovePersonIdFromActivities
+edit	app/controllers/activities_controller.rb	/^  def edit$/;"	f	class:ActivitiesController
+edit	app/controllers/entries_controller.rb	/^  def edit$/;"	f	class:EntriesController
+edit	app/controllers/people_controller.rb	/^  def edit$/;"	f	class:PeopleController
+entries	db/structure.sql	/^CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "author" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "person_id" integer);$/;"	t
+entries.author	db/structure.sql	/^CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "author" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "person_id" integer);$/;"	F
+entries.created_at	db/structure.sql	/^CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "author" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "person_id" integer);$/;"	F
+entries.id	db/structure.sql	/^CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "author" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "person_id" integer);$/;"	F
+entries.person_id	db/structure.sql	/^CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "author" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "person_id" integer);$/;"	F
+entries.text	db/structure.sql	/^CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "author" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "person_id" integer);$/;"	F
+entries.updated_at	db/structure.sql	/^CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "text" text, "author" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "person_id" integer);$/;"	F
+entries_controller.rb	app/controllers/entries_controller.rb	1;"	F
+entry.rb	app/models/entry.rb	1;"	F
+entry_spec.rb	spec/models/entry_spec.rb	1;"	F
+environment.rb	config/environment.rb	1;"	F
+events_controller.rb	app/controllers/api/events_controller.rb	1;"	F
+get_activity	app/controllers/activities_controller.rb	/^  def get_activity$/;"	f	class:ActivitiesController
+get_entry	app/controllers/entries_controller.rb	/^  def get_entry$/;"	f	class:EntriesController
+get_person	app/controllers/people_controller.rb	/^  def get_person$/;"	f	class:PeopleController
+ijacek_controller.rb	app/controllers/ijacek_controller.rb	1;"	F
+image_or_default	app/models/person.rb	/^  def image_or_default$/;"	f	class:Person
+images_controller.rb	app/controllers/images_controller.rb	1;"	F
+importer.rb	importer.rb	1;"	F
+index	app/controllers/activities_controller.rb	/^  def index$/;"	f	class:ActivitiesController
+index	app/controllers/answers_controller.rb	/^  def index$/;"	f	class:AnswersController
+index	app/controllers/api/events_controller.rb	/^  def index$/;"	f	class:Api
+index	app/controllers/entries_controller.rb	/^  def index$/;"	f	class:EntriesController
+index	app/controllers/questions_controller.rb	/^  def index$/;"	f	class:QuestionsController
+inflections.rb	config/initializers/inflections.rb	1;"	F
+jquery.peity.js	app/assets/javascripts/jquery.peity.js	1;"	F
+link_to_icon	app/helpers/application_helper.rb	/^  def link_to_icon(icon, url, options = {})$/;"	f	class:ApplicationHelper
+mime_types.rb	config/initializers/mime_types.rb	1;"	F
+new	app/controllers/activities_controller.rb	/^  def new$/;"	f	class:ActivitiesController
+new	app/controllers/sessions_controller.rb	/^  def new$/;"	f	class:SessionsController
+next	app/models/person.rb	/^  def self.next$/;"	F	class:Person
+peity	app/assets/javascripts/jquery.peity.js	/^  peity.register = function(type, defaults, grapher) {$/;"	m
+people	app/controllers/application_controller.rb	/^  def people$/;"	f	class:ApplicationController
+people	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	t
+people.created_at	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.gender	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.id	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.ijacek	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.image	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.info	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.password_digest	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.time	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.time_exchange	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.updated_at	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people.username	db/structure.sql	/^CREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "gender" integer, "info" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "password_digest" varchar(255), "image" varchar(255), "ijacek" boolean, "time" varchar(255), "time_exchange" varchar(255));$/;"	F
+people_controller.rb	app/controllers/people_controller.rb	1;"	F
+person.rb	app/models/person.rb	1;"	F
+photo.rb	app/models/photo.rb	1;"	F
+photos_controller.rb	app/controllers/photos_controller.rb	1;"	F
+photos_spec.rb	spec/models/photos_spec.rb	1;"	F
+photos_uploader.rb	app/uploaders/photos_uploader.rb	1;"	F
+posting_entry_spec.rb	spec/feature/posting_entry_spec.rb	1;"	F
+production.rb	config/environments/production.rb	1;"	F
+question.rb	app/models/question.rb	1;"	F
+question_spec.rb	spec/models/question_spec.rb	1;"	F
+questions_controller.rb	app/controllers/questions_controller.rb	1;"	F
+questions_controller_spec.rb	spec/controllers/questions_controller_spec.rb	1;"	F
+rails	script/rails	1;"	F
+routes.rb	config/routes.rb	1;"	F
+rsvp	app/controllers/activities_controller.rb	/^  def rsvp$/;"	f	class:ActivitiesController
+schedule	app/models/person.rb	/^  def self.schedule$/;"	F	class:Person
+schema.rb	db/schema.rb	1;"	F
+schema_migrations	db/structure.sql	/^CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL);$/;"	t
+schema_migrations.unique_schema_migrations	db/structure.sql	/^CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version");$/;"	i
+schema_migrations.version	db/structure.sql	/^CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL);$/;"	F
+secret_token.rb	config/initializers/secret_token.rb	1;"	F
+seeds.rb	db/seeds.rb	1;"	F
+session_store.rb	config/initializers/session_store.rb	1;"	F
+sessions_controller.rb	app/controllers/sessions_controller.rb	1;"	F
+show	app/controllers/activities_controller.rb	/^  def show$/;"	f	class:ActivitiesController
+show	app/controllers/people_controller.rb	/^  def show$/;"	f	class:PeopleController
+spec_helper.rb	spec/spec_helper.rb	1;"	F
+store_dir	app/uploaders/photos_uploader.rb	/^  def store_dir$/;"	f	class:PhotosUploader
+structure.sql	db/structure.sql	1;"	F
+test.rb	config/environments/test.rb	1;"	F
+text_to_link	app/helpers/application_helper.rb	/^  def text_to_link(text)$/;"	f	class:ApplicationHelper
+un_rsvp	app/controllers/activities_controller.rb	/^  def un_rsvp$/;"	f	class:ActivitiesController
+up	db/migrate/20130226230638_add_time_to_people.rb	/^  def up$/;"	f	class:AddTimeToPeople
+up	db/migrate/20130301222155_remove_person_id_from_activities.rb	/^  def up$/;"	f	class:RemovePersonIdFromActivities
+update	app/controllers/activities_controller.rb	/^  def update$/;"	f	class:ActivitiesController
+update	app/controllers/entries_controller.rb	/^  def update$/;"	f	class:EntriesController
+update	app/controllers/images_controller.rb	/^  def update$/;"	f	class:ImagesController
+update	app/controllers/people_controller.rb	/^  def update$/;"	f	class:PeopleController
+wrap_parameters.rb	config/initializers/wrap_parameters.rb	1;"	F

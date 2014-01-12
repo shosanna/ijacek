@@ -22,6 +22,7 @@ class EntriesController < ApplicationController
     @activity = Activity.new
 
     @answers = Answer.all.sample(3)
+    @comments = Comment.order("created_at DESC").take(4)
   end
 
   def create

@@ -8,7 +8,7 @@ class Person < ActiveRecord::Base
   has_many :questions, through: :answers
 
   def self.schedule
-    %w(Tyna Tom Simonka Kuba Pavel)
+    %w(Tyna Tom Simonka Kuba Pavel Arnie)
   end
 
   def self.current
@@ -27,7 +27,7 @@ class Person < ActiveRecord::Base
       return Person.find_by_username(name)
     else
       first = schedule[0]
-      first_person = Person.find_by_username(first)
+      return Person.find_by_username(first)
     end
   end
 
