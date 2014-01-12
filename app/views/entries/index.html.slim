@@ -10,7 +10,7 @@
             li
               = comment.text
               '  at event:
-              = link_to comment.commentable.name, comment.commentable
+              = link_to comment.commentable.commentable_text, comment.commentable
               '  (written by
               - person = Person.find_by_id(comment.person_id).username
               =   person

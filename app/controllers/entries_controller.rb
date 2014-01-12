@@ -50,4 +50,9 @@ class EntriesController < ApplicationController
     flash.notice = "<p class='red'> Your entry '<em>#{@text}</em>' has been removed </p>"
   end
 
+  def show
+    entry = params[:id]
+    redirect_to entries_path + "/#entry-#{entry}"
+  end
+
 end

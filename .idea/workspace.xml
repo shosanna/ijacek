@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="396885f4-1aef-4528-a01d-510b4757cc89" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ijacek.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130308-2237-738-0854/_MG_9175.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130308-2237-738-1391/_MG_9175.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130308-2237-738-2917/_MG_9175.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130308-2238-738-6152/_MG_9175.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130308-2239-738-1777/_MG_9175.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130309-0038-1584-3812/IMG_0256.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130309-0040-1584-0688/IMG_0256.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130309-0040-1584-6746/IMG_0256.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130309-0049-1584-4286/IMG_0256.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130309-1029-395-3987/IMG_0262.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130309-1136-395-3670/IMG_0204.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/tmp/20130309-1137-906-2403/IMG_0204.JPG" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/entries/_entry.html.slim" afterPath="$PROJECT_DIR$/app/views/entries/_entry.html.slim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity.rb" afterPath="$PROJECT_DIR$/app/models/activity.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/entries_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/entries_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/entry.rb" afterPath="$PROJECT_DIR$/app/models/entry.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/entries/index.html.slim" afterPath="$PROJECT_DIR$/app/views/entries/index.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/person.rb" afterPath="$PROJECT_DIR$/app/models/person.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="ijacek.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,19 +38,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entries_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="entries_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/entries_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="55" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="870">
+            <state line="54" column="33" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.79389316" vertical-offset="290" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.slim" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/entries/index.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="25" selection-start="347" selection-end="347" vertical-scroll-proportion="0.29816514" vertical-offset="0" max-vertical-offset="990">
+            <state line="55" column="20" selection-start="1442" selection-end="1442" vertical-scroll-proportion="-19.416666" vertical-offset="359" max-vertical-offset="990">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_entry.html.slim" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/entries/_entry.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -94,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entry.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/entry.rb">
+      <file leaf-file-name="activity.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+            <state line="14" column="8" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -116,8 +105,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/entries_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/entry.rb" />
+        <option value="$PROJECT_DIR$/app/models/activity.rb" />
         <option value="$PROJECT_DIR$/app/views/entries/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/entries/_entry.html.slim" />
+        <option value="$PROJECT_DIR$/app/controllers/entries_controller.rb" />
       </list>
     </option>
   </component>
@@ -321,6 +313,26 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
@@ -484,16 +496,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/entry.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/person.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="446">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="446">
+        <state line="14" column="8" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <folding />
         </state>
       </provider>
@@ -505,23 +517,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/person.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/entry.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+        <state line="8" column="20" selection-start="222" selection-end="222" vertical-scroll-proportion="0.17699115" vertical-offset="0" max-vertical-offset="678">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/entries_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="55" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="870">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="446">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/entries/_entry.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="631">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/entries/index.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="347" selection-end="347" vertical-scroll-proportion="0.29816514" vertical-offset="0" max-vertical-offset="990">
+        <state line="55" column="20" selection-start="1442" selection-end="1442" vertical-scroll-proportion="-19.416666" vertical-offset="359" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/entries_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="33" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.79389316" vertical-offset="290" max-vertical-offset="945">
           <folding />
         </state>
       </provider>
